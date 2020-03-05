@@ -1,0 +1,7 @@
+#menu{
+    z-index: 99999;
+    position: absolute;
+    width: 13%;
+    left: 0.5%;
+    top: 7%;
+}

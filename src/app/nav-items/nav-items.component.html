@@ -1,0 +1,6 @@
+<ul id="kiko" role="menubar">
+    <li  *ngFor="let item of navSubItems">
+      <a (click)="clicked(item.Label)">{{ item.Label }}<span *ngIf="item.Items" style="float: right;">{{arrow}}</span></a>
+      <app-nav-items *ngIf="item.Items" [navSubItems]="item.Items"></app-nav-items>
+    </li>
+  </ul> 

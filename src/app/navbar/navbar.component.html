@@ -1,0 +1,11 @@
+<button (click)="openMenu()">Click Me to open the menu</button>
+<app-nav-items id="menu" style="z-index: 99999;position: absolute;" *ngIf="showMenu" (selectedItem)=getSelectedItem($event) [navSubItems]="navItemsData"></app-nav-items>
+
+<!-- <ul role="menubar">
+  <li *ngFor="let item of navItemsData">
+    <a>{{ item.Label }}</a>
+    <app-nav-item *ngIf="item.Items" [navSubItems]="item.Items"></app-nav-item>
+  </li>
+</ul> -->
+
+<!-- <app-nav-items [navSubItems]="navItemsData"></app-nav-items> -->
